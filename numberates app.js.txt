@@ -1,0 +1,48 @@
+function func(){
+    a=10;
+    document.getElementById("demo1").innerHTML=a;
+    while(a!=0){
+    n=parseInt(document.getElementById("textBox").value);
+    x = parseInt(Math.random() * 100);
+    if(n==x){
+        document.getElementById("heading").remove();
+        document.getElementById("textLabel").remove();
+        document.getElementById("textBox").remove();
+        document.getElementById("checkButton").remove();
+        im=document.createElement("img");
+        im.src="https://www.pngmart.com/files/15/Happy-Emoji-PNG.png";
+        im.height="100px";
+        im.width="100px";
+        document.getElementById("main").appendChild(im);
+        im.style.display="block";
+        im.style.margin="auto";
+        document.getElementById("demo").innerHTML="HURRY!!!<br> YPU WON THE GAME";
+    }
+    else if(n<x){
+        document.getElementById("demo").innerHTML="GUESSED NUMBER IS<br>SMALL";
+        a--;
+        document.getElementById("demo1").innerHTML=a;
+        break;
+    }
+    else if(n>x){
+        document.getElementById("demo").innerHTML="GUESSSED NUMBER IS<br> BIG";
+        a--;
+        document.getElementById("demo1").innerHTML=a;
+        break;
+    }
+    }
+    if(a==0){
+        document.getElementById("heading").remove();
+        document.getElementById("textLabel").remove();
+        document.getElementById("textBox").remove();
+        document.getElementById("checkButton").remove();
+        im=document.createElement("img");
+        im.src="https://www.pngfind.com/pngs/m/238-2383371_sad-emoticon-png-new-iphone-emojis-transparent-png.png";
+        im.height="100px";
+        im.width="100px";
+        document.getElementById("main").appendChild(im);
+        im.style.display="block";
+        im.style.margin="auto";
+        document.getElementById("demo").innerHTML="SORRY...<br>YOU LOST THE GAME";
+    }
+}

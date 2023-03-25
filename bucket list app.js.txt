@@ -1,0 +1,11 @@
+function addfunc(){
+    a=document.getElementById("datainput").value;
+    b=document.getElementById("about");
+    d=document.createElement("option");
+    d.value=a;
+    b.appendChild(d);
+}
+function resetfunc(){
+    z=document.getElementsByTagName("option");
+    z.remove();
+}

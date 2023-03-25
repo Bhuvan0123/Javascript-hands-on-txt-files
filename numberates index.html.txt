@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Numberates Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="attempts">
+            <h1 id="attemptLabel">NO. OF ATTEMPTS</h1>
+            <div id="attemptCount">
+                <p id="demo1">10</p>
+            </div>
+        </div>
+        <h1 id="title">NUMBERATES</h1>
+        <div id="main">
+            <h1 id="heading">Guess the number between 1 - 100</h2>
+            <br>
+            <form>
+                <img src="" alt="">
+                <label id="textLabel" for="textBox">Enter the number:  </label>
+                <input type="text" id="textBox" name="textBox">
+                <br>
+                <br>
+                <button id="checkButton" onclick="func()">CHECK</button>
+            </form>
+        </div>
+        <p id="demo"></p>
+    </body>
+</html>

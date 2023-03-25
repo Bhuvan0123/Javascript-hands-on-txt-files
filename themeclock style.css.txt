@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn button {
+    width: 6%;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+  }
+  
+  #clock-container {
+    width: 16%;
+    margin: auto;
+    transform: translateY(20vh);
+  }
+  
+  #clock {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #clock img {
+    width: 100%;
+  }
+  #clock #center-point {
+    width: 7%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  .hands {
+    width: 16%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+  }
+
+  .hands #minute {
+    width: 10%;
+    height: 14vh;
+    border-radius: 40px;
+    background-color: blue;
+    transform-origin: 42% 84%;
+    position: absolute;
+  }
+  
+  .digit_clock {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    transform: translate(10px, 170px);
+    letter-spacing: 4px;
+  }
+  
+  .description {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+  }

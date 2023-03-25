@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+    <div>
+        <img src="https://t3.ftcdn.net/jpg/05/51/73/98/360_F_551739810_GPeANXFn9w7U2eTPVzbYMpBNXo3eO6No.jpg" id="bgImage" height="400px" width="100%">
+        <div id="content">
+            <h1 id="heading">My 2023 BUCKET LIST</h1>
+            <br>
+            <input type="text" id="datainput" name="datainput">
+            <button id="addButton" onclick="addfunc()">Add</button>
+        </div>
+    </div>
+    <div>
+        <h1 id="heading1">Here's what you gotta do this year</h1>
+        <p id="heading2">The first think on your bucket list is to tick things of your <br> bucket list. So, go ahead buddy :)...</p>
+        <form>
+            <input list="bucketlist" id="about" name="about">
+            <datalist id="bucketlist">
+                <option value="happy 2023">
+            </datalist>
+        </form>
+        <br>
+        <br>
+        <button id="resetButton" onclick="resetfunc()"><h2>Reset Bucket List</h2></button>
+    </div>
+    </body>
+</html>

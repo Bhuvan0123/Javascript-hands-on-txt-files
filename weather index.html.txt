@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Prognosis</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <h1 id="heading">WEATHER REPORT</h1>
+        <div id="grid1">
+            <input type="text" id="textBox" name="textBox">
+            <button id="submitButton" onclick="func()">SUBMIT</button>
+        </div>
+        <br>
+        <br>
+        <div id="grid2">
+            <img src="https://w7.pngwing.com/pngs/546/46/png-transparent-weather-forecasting-severe-weather-storm-weather-free-text-heart-logo-thumbnail.png" height="60px" width="60px" id="weather">
+            <h1 id="city"> DELHI </h1>
+            <h1 id="temp"> 26 C</h1>
+        </div>
+    </body>
+</html>

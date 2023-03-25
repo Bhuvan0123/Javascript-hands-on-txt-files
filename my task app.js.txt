@@ -1,0 +1,14 @@
+function red(){
+    document.getElementById("green").style.display="none";
+    document.getElementById("red").style.display="block";
+}
+function green(){
+    document.getElementById("red").style.display="none";
+    document.getElementById("green").style.display="block";
+}
+function alls(){  
+    document.getElementById("red").style.display="block";
+
+    document.getElementById("green").style.display="block";
+
+}

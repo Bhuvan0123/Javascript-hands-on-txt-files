@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Chronometer<h1>
+    <div id="demo">
+        <h2 id="timer">Chronometer 0</h2>
+        <br>
+	<p id="chronometer-holder"></p>
+        <div id="main">
+            <p id="minutes-holder"></p>
+            <p id="seconds-holder"></p>
+            <h1 class="time">00 : 25 : 00</h1>
+        </div>
+    </div>
+    <br>
+    <button onclick="start()" id="start">Start</button>
+    <button onclick="stop()" id="stop">Stop</button>
+    <button onclick="reset()" id="reset">Reset</button>
+    <script src="app.js"></script>
+</body>
+</html>

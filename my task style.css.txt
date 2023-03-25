@@ -1,0 +1,140 @@
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width:100px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+left:1210px;
+background-color: lightblue;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content button{
+color: black;
+color:rgb(255, 255, 255);
+width:200px;
+background-color:lightblue;
+text-align: center;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content button:hover {background-color: blue}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+body {    
+margin: 0 !important;
+padding: 0 !important;
+background-image: url("https://w0.peakpx.com/wallpaper/25/353/HD-wallpaper-blue-waves-background-blue-abstraction-background-blue-blur-waves-creative-backgrounds-oneplus-7t-stock.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+}
+#img-cover{
+position:relative;
+width:1520px;
+height:350px;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 69%);
+z-index: -1;  
+}
+#dropdown{
+position:absolute;
+top:10px;
+left:30px;
+object-position: top 3 left 10px;
+height:50px;
+width:50px;
+}
+#timeline{
+position:absolute;
+top:-5px;
+left:100px;  
+}
+#dots{
+position:absolute;
+top:10px;
+right:45px;
+height:50px;
+width:50px;
+}
+#user{
+position:absolute;
+top:100px;
+left:100px;
+height:100px;
+width:100px;
+}
+#aboutMe{
+position:absolute;
+top:100px;
+left:210px;
+color:#000000;    
+text-align:center;
+font-size:30px;
+font-weight:bold;
+}
+#filter{
+position:relative;
+top:20px;
+left:1250px;
+background-color: whitesmoke;
+clip-path: circle(45% at 50% 50%);
+height:75px;
+width:75px;
+}
+#bulletin{
+width:10px;
+height:10px;
+display: inline-block;
+}
+#content{
+margin-top:0px;
+margin-left: 100px;
+}
+#content p{
+line-height:0px;
+opacity:0.7;
+margin-left: 30px;
+}
+#red{
+color:red;
+font-size:20px;
+line-height: 5px;
+}
+#red p,#green p{
+color:black;
+opacity:0.5;
+}
+#green{
+color:green;
+font-size:20px;
+}
+#myTasks{
+font-size:45px;
+font-weight: bolder;
+}
+#dateTime{
+opacity:0.5;
+font-size: 25px;
+margin-top: 0px;    
+}

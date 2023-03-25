@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+    <img src="https://w7.pngwing.com/pngs/402/481/png-transparent-hamburger-button-drop-down-list-computer-icons-navigation-bars-and-page-menu-templates-text-rectangle-black.png" id="dropdown">
+    <img id="img-cover" src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg">
+    <h1 id="timeline">Timeline</h1>
+    <img id="dots" src="https://www.svgrepo.com/show/124304/three-dots.svg">
+    <img id="user" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <h3 id="aboutMe">BHUVAN CHANDRA P<br>Web/Front-end Designer</h3>    
+        <div id="content">
+            <div class="dropdown">
+                <img id="filter" class="dropbtn" src="https://www.pngfind.com/pngs/m/299-2997801_drop-down-arrow-solid-comments-drop-down-list.png" alt="dropdown list">
+                <div class="dropdown-content">
+                <button onclick="red()">REQUIRED</button>
+                <button onclick="green()">MAY BE DONE LATER</button>
+                <button onclick="alls()">ALL</button>
+                </div>
+            </div>
+            <h2 id="myTasks" style="line-height:5px;">My Tasks</h2>
+            <h2 id="dateTime" style="line-height:5px;">JANUARY 1 2023</h3>
+            <div id="red">
+            <img id="bulletin" src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png">
+            <h3 style="display:inline-block">Create New Project</h3><br><p>-Web App</p>
+            <img id="bulletin" src="https://www.freepnglogos.com/uploads/dot-png/file-location-dot-red-svg-wikipedia-0.png">
+            <h3 style="display:inline-block">Catch Up with George</h3><br><p>-Mobile Project</p>
+            </div>
+            <div id="green">
+            <img id="bulletin" src="https://e7.pngegg.com/pngimages/631/343/png-clipart-circle-n-carpet-cleaning-upland-green-dot-corporation-others-rectangle-grass-thumbnail.png">
+            <h3 style="display:inline-block">Design Explorations</h3><br><p>-Company Website</p>
+            <img id="bulletin" src="https://e7.pngegg.com/pngimages/631/343/png-clipart-circle-n-carpet-cleaning-upland-green-dot-corporation-others-rectangle-grass-thumbnail.png">
+            <h3 style="display:inline-block">Team meeting</h3><br><p>-Hangouts</p>
+            </div>
+        </div>
+</body>
+</html>

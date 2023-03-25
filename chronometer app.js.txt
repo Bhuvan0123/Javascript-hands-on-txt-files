@@ -1,0 +1,52 @@
+hour=00;
+min=25;
+sec=00;
+function twoDigits() {
+    hour = (hour < 10) ? "0" + hour : hour;
+    min = (min < 10) ? "0" + min : min;
+    sec = (sec < 10) ? "0" + sec : sec;
+}
+function start() {
+    if (hour || min || sec != 0) {
+        let btn = document.querySelectorAll('input_btn button');
+        btn.forEach((element) => {
+            element.desabled = 'true';
+        })
+        timer = setInterval(() => {
+            if (sec > 00) { sec--; }
+            if (min == 00 && hour != 0) {
+                hour--;
+            }
+            if (sec == 00 && min != 0) {
+                sec = 59;
+                min--;
+            }
+            twoDigits();
+            document.querySelector(".time").innerHTML = `${hour} : ${min} : ${sec}`;
+            hour = parseInt(hour);
+            min = parseInt(min);
+            sec = parseInt(sec);
+            if (hour == 0 && min == 0 && sec == 0) {
+                clearInterval(timer);
+                var notification = new Notification('Time\'s Up!!!', {
+                    body: 'The Timer has hit 0'
+                });
+            }
+        }, 1000);
+    } else {
+        alert('Please Enter Value for the timer to start ...');
+    }
+}
+function reset() {
+    hour = 00;
+    min = 00;
+    sec = 00;
+    twoDigits();
+    clearInterval(timer);
+    document.querySelector(".time").innerHTML = `${hour} : ${min} : ${sec}`;
+    console.log("Restart !");
+}
+function pause() {
+    clearInterval(timer);
+    console.log("paused !");
+}

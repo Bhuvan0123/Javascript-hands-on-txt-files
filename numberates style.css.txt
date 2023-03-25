@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right,rgb(245, 103, 245),pink,rgba(255, 166, 0, 0.918));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#attempts{
+    position:absolute;
+    right:0px;
+    top:0px;
+    color: white;
+}
+#attemptCount{
+    background-color: orange;
+    color:red;
+    border: 1px solid orange;
+    border-radius: 25px;
+    width:50px;
+    position: relative;
+    left:90px;
+}
+#title{
+    position: relative;
+    top:180px;
+    color:azure;
+}
+#main{
+    position:relative;
+    background-color: azure;
+    width:50%;
+    height: 200px;
+    top:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#heading{
+    padding-top: 10px;
+}
+#textBox{
+    background-image: linear-gradient(to bottom right,rgb(245, 103, 245),pink,rgba(255, 166, 0, 0.918));
+    width:200px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#checkButton{
+    background-color: pink;
+    width:200px;
+    height:60px;
+    color:white;
+    border: 1px solid white;
+}
